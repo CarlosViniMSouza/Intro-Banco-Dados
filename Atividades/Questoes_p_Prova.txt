@@ -1,0 +1,42 @@
+Q1. Responda cada uma das perguntas abaixo:
+
+
+	(a). O que é Redundância de Dados? Quais os tipos? Como evitar?
+
+	1. Resp.: Trata-se de um dado que se repete frequentemente no sistema. 
+	2. Resp.: Existem 2 tipos = Redundância Controlada e Redundância Não Controlada.
+	3. Resp.: Compartilhamento de Dados = cada informação é armazenada uma única vez, sendo acessada pelos vários sistemas que dela necessitam.
+
+
+	(b). Explique o que é um Banco de Dados e o que é um SGBD.
+
+	1. Resp.: Banco de Dados = conjunto de dados com alguma importância.
+	2. Resp.: SGBD = Software com funções de definir, recuperar e alterar dados em um banco de dados.
+
+
+	(c). Explique a definição de Dados, Informação e Conhecimento.
+
+	1. Resp.: Dados = Registro de um fato isolado que não possui relevância.
+	2. Resp.: Informação = Seria os dados depois de processados e contextualizados.
+	3. Resp.: Conhecimento = Discernimento sobre as informações (Visão pessoal quanto a informação)
+
+
+	(d). Fale sobre cada um dos níveis da Arquitetura de um SGBD.
+
+	1. Resp.: Fisíco = Descreve a estrutura de armazenamento físico do banco de dados. Baixo Nível de abstração.
+	2. Resp.: Conceitual = Descreve a estrutura do banco de dados como um todo, inclusive como os dados se relacionam. Nível Médio de abstração.
+	3. Resp.: Externo =  Descreve o modo pelo qual os dados são vistos pelos usuários do SGDB. Alto Nível de abstração.
+
+
+Q2. Explique com suas palavras cada um dos itens a seguir:
+
+
+1 – Entidade = Objetos que deseja-se manter informações.
+
+2 – Atributo = Propriedades descritivas da entidade ou relacionamento.
+
+3 – Relacionamento = Associações entre entidades.
+
+4 – Atributo identificador = Elemento usado para identificar uma instância de uma entidade ou de um relacionamento.
+
+5 – Cardinalidade = Determina as quantidades mínima e máxima de relacionamentos que uma instância pode ter com outras instâncias.
