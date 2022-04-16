@@ -122,7 +122,7 @@ BETWEEN <valor1> AND <valor2>
 ```
 SELECT * FROM Empregado
 WHERE salario
-BETWEEN 1000 AND 2000
+BETWEEN 1000 AND 2000;
 ```
 
 <br></br>
@@ -171,7 +171,7 @@ ORDER BY <atributo> {ASC/DESC}
 ```
 SELECT *
 FROM Funcionarios
-ORDER BY nome
+ORDER BY nome;
 ```
 
 `Ex2.: Ordene todos os funcionarios pelo salario descendentemente`
@@ -179,9 +179,45 @@ ORDER BY nome
 ```
 SELECT *
 FROM Funcionarios
-ORDER BY salario DESC
+ORDER BY salario DESC;
 ```
 
 <br></br>
 
 ## 5 - Funcoes agregadas
+
+Algumas funcoes conhecidas (a partir do SELECT): 
+
+```
+1 - MAX
+2 - MIN
+3 - SUM
+4 - AVG
+5 - COUNT
+```
+
+`Ex1.: Mostrar o valor do maior salário dos empregados, e, o nome do empregado`
+
+```
+SELECT nome, salario 
+FROM Empregado
+WHERE salario 
+IN (SELECT MAX (salario) FROM Empregado);
+```
+
+`Ex2.: Mostrar a media dos salarios dos empregados`
+
+```
+SELECT AVG (salario) 
+FROM Empregado;
+```
+
+`Ex3.: Mostrar quantos empregados tem 'salario > R$1000'`
+
+```
+SELECT COUNT (*)
+FROM Empregado
+WHERE salario > 1000;
+```
+
+## 6 - Comando DISTINCT
