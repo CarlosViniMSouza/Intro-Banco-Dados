@@ -128,3 +128,60 @@ BETWEEN 1000 AND 2000
 <br></br>
 
 &nbsp; &nbsp; &nbsp; 4.2 - LIKE e NOT LIKE
+
+Aplicam-se SOMENTE sobre atributos do tipo CHAR!
+
+Operam como '=' e '< >', usando o simbolo % (substitui uma palavra)
+
+`Ex.: Listar os empregados com Jose no 1° nome`
+
+```
+SELECT nome FROM Empregado
+WHERE nome LIKE 'José';
+```
+
+<br></br>
+
+&nbsp; &nbsp; &nbsp; 4.3 - IN e NOT IN
+
+Procuram dados contidos (ou nao) em um conjunto de valores
+
+(Intersecao e Diferenca de conjuntos, basicamente ...)
+
+`Ex.: Listar todos os atributos de Carro com cores 'branco' e 'preto'`
+
+```
+SELECT * FROM Carro 
+WHERE cor IN ('branco', 'preto');
+```
+
+&nbsp; &nbsp; &nbsp; 4.4 - ORDER BY
+
+Ordena os elementos em ordem Crescente ou Decrescente
+
+```
+SELECT <lista-atributos>
+FROM <tabela>
+[WHERE <condicao>]
+ORDER BY <atributo> {ASC/DESC}
+```
+
+`Ex1.: Ordene todos os funcionarios pelo nome ascendentemente`
+
+```
+SELECT *
+FROM Funcionarios
+ORDER BY nome
+```
+
+`Ex2.: Ordene todos os funcionarios pelo salario descendentemente`
+
+```
+SELECT *
+FROM Funcionarios
+ORDER BY salario DESC
+```
+
+<br></br>
+
+## 5 - Funcoes agregadas
