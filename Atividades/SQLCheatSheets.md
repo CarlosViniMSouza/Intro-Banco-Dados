@@ -109,3 +109,22 @@ WHERE matricula = "123";
 <br></br>
 
 ## 4 - Operadores SQL
+
+&nbsp; &nbsp; &nbsp; 4.1 - BETWEEN/NOT BETWEEN: substituem respectivamente o '<=' e '>='
+
+```
+WHERE <nome-atributo>
+BETWEEN <valor1> AND <valor2>
+```
+
+`Ex.: Listar todos os Empregados cujo salário esteja entre R$1000 e R$2000`
+
+```
+SELECT * FROM Empregado
+WHERE salario
+BETWEEN 1000 AND 2000
+```
+
+<br></br>
+
+&nbsp; &nbsp; &nbsp; 4.2 - LIKE e NOT LIKE
