@@ -57,3 +57,55 @@ CONSTRAINT tabela_const
 <br></br>
 
 ## 2 - Remocao de Tabelas
+
+Apaga a tabela que foi desenvolvida! Use com MUITO CUIDADO!!
+
+```
+DROP TABLE <tabela>;
+```
+
+`Exemp.: DROP TABLE Professor;`
+
+<br></br>
+
+## 3 - Comando SELECT
+
+&nbsp; &nbsp; &nbsp; 3.1 - Selecionando atributos especificos:
+
+```
+SELECT <lista-atributos> FROM <tabela>;
+```
+
+`Ex: Listar matricula e nome de todos os professores`
+
+```
+SELECT matricula, nome FROM Professor;
+```
+
+&nbsp; &nbsp; &nbsp; 3.2 - Selecionando todos atributos:
+
+`Ex: Listar tudo dos professores`
+
+```
+SELECT * FROM Professor;
+```
+
+&nbsp; &nbsp; &nbsp; 3.3 - Selecionando tuplas da tabela com condicao:
+
+```
+SELECT <lista-atributos> 
+FROM <tabela> 
+WHERE <coluna_tabela> = <condicao>;
+```
+
+`Ex: Listar tudo do prof da 'matricula = 123'`
+
+```
+SELECT *
+FROM Professor
+WHERE matricula = "123";
+```
+
+<br></br>
+
+## 4 - Operadores SQL
