@@ -221,3 +221,42 @@ WHERE salario > 1000;
 ```
 
 ## 6 - Comando DISTINCT
+
+Elimina tuplas duplicadas do resultado de uma consulta
+
+`Ex.: Quais os diferentes salários dos empregados?`
+
+```
+SELECT DISTINCT salario FROM Empregado;
+```
+
+## 7 - Comando GROUP BY
+
+Organiza a seleção de dados em grupos
+
+`Ex.: Listar os empregados agrupados por sexo, informando as quantidades`
+
+```
+SELECT sexo, nome, 
+Count(*) FROM Empregado 
+GROUP BY sexo, nome;
+```
+
+Obs.: Todos os atributos do SELECT devem aparecer no GROUP BY
+
+## 8 - Uso de Alias
+
+Alias são utilizados para substituir nomes de tabelas em comandos SQL
+
+São definidos na cláusula FROM
+
+Ex.:
+
+```
+SELECT A.nome FROM Aluno A
+WHERE A.matricula = 15;
+```
+
+--> Esse do 'ALIAS' eu não entendi o codigo SQL <--
+
+## 9 - Juncao de Tabelas
