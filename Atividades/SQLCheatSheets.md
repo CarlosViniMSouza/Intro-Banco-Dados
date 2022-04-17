@@ -260,3 +260,24 @@ WHERE A.matricula = 15;
 --> Esse do 'ALIAS' eu não entendi o codigo SQL <--
 
 ## 9 - Juncao de Tabelas
+
+Citar as tabelas envolvidas no comando FROM
+
+– 'Alias' para tabelas: utilizados para evitar ambiguidades
+
+Referenciar os nomes de Empregado e de Departamento
+
+```
+...e.nome...FROM Empregado e
+...d.nome...FROM Departamento d
+```
+
+`Ex.: Listar o nome do empregado e do departamento onde está alocado`
+
+```
+SELECT E.nome, D.nome
+FROM Empregado E, Departamento D
+WHERE E.num_dep = D.numero;
+```
+
+## 10 - Adicionando tuplas
