@@ -117,7 +117,7 @@ WHERE <nome-atributo>
 BETWEEN <valor1> AND <valor2>
 ```
 
-`Ex.: Listar todos os Empregados cujo salário esteja entre R$1000 e R$2000`
+`Ex.: Listar todos os Empregados cujo salario esteja entre R$1000 e R$2000`
 
 ```
 SELECT * FROM Empregado
@@ -137,7 +137,7 @@ Operam como '=' e '< >', usando o simbolo % (substitui uma palavra)
 
 ```
 SELECT nome FROM Empregado
-WHERE nome LIKE 'José';
+WHERE nome LIKE 'Jose';
 ```
 
 <br></br>
@@ -196,7 +196,7 @@ Algumas funcoes conhecidas (a partir do SELECT):
 5 - COUNT
 ```
 
-`Ex1.: Mostrar o valor do maior salário dos empregados, e, o nome do empregado`
+`Ex1.: Mostrar o valor do maior salario dos empregados, e, o nome do empregado`
 
 ```
 SELECT nome, salario 
@@ -224,7 +224,7 @@ WHERE salario > 1000;
 
 Elimina tuplas duplicadas do resultado de uma consulta
 
-`Ex.: Quais os diferentes salários dos empregados?`
+`Ex.: Quais os diferentes salarios dos empregados?`
 
 ```
 SELECT DISTINCT salario FROM Empregado;
@@ -248,7 +248,7 @@ Obs.: Todos os atributos do SELECT devem aparecer no GROUP BY
 
 Alias são utilizados para substituir nomes de tabelas em comandos SQL
 
-São definidos na cláusula FROM
+Sao definidos na cláusula FROM
 
 Ex.:
 
@@ -257,7 +257,7 @@ SELECT A.nome FROM Aluno A
 WHERE A.matricula = 15;
 ```
 
---> Esse do 'ALIAS' eu não entendi o codigo SQL <--
+--> Esse do 'ALIAS' eu nao entendi no codigo SQL <--
 
 ## 9 - Juncao de Tabelas
 
@@ -272,7 +272,7 @@ Referenciar os nomes de Empregado e de Departamento
 ...d.nome...FROM Departamento d
 ```
 
-`Ex.: Listar o nome do empregado e do departamento onde está alocado`
+`Ex.: Listar o nome do empregado e do departamento onde esta alocado`
 
 ```
 SELECT E.nome, D.nome
@@ -281,3 +281,51 @@ WHERE E.num_dep = D.numero;
 ```
 
 ## 10 - Adicionando tuplas
+
+&nbsp; &nbsp; &nbsp; 10.1 - Comando INSERT
+
+```
+INSERT INTO <tabela> (<lista de atributos>)
+VALUES (<valores>);
+```
+
+`Ex.: Inserir dados de um professor`
+
+```
+INSERT INTO Professor (matricula, nome, telefone, salario, rua, bairro, cep) 
+VALUES ('123', 'João', '9999-6969', 1500, 'rua A', 'bairro B', '6900000')
+```
+
+&nbsp; &nbsp; &nbsp; 10.2 - Comando UPDATE
+
+```
+UPDATE <tabela>
+SET <nome-atributo> = <valor>
+WHERE <condicao>;
+```
+
+`Ex: Atualizar salario do professor de matricula 123 para R$ 4000`
+
+```
+UPDATE Professor 
+SET salario = 4000 
+WHERE matricula = '123';
+```
+
+&nbsp; &nbsp; &nbsp; 10.3 - Comando DELETE
+
+```
+DELETE FROM <tabela> 
+WHERE <condicao>;
+```
+
+`Ex: Remover professor de matricula 123`
+
+```
+DELETE FROM Professor 
+WHERE matricula = '123';
+```
+
+## 11 - Exercicio
+
+![Exerc](/Images/Exercicio.jpg)
